@@ -14,6 +14,7 @@ interface Props {
   onRetry?: () => void
 }
 
+// @uxid src/components/MessageItem::MessageItem
 export default ({ role, message, showRetry, onRetry }: Props) => {
   const roleClass = {
     system: 'bg-gradient-to-r from-gray-300 via-gray-200 to-gray-300',
