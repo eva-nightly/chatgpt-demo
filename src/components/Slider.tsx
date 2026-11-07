@@ -13,6 +13,7 @@ interface Props {
   setValue: (v: number) => void
 }
 
+// @uxid src/components/Slider::Slider
 export const Slider = (selectProps: Props) => {
   const props = mergeProps({
     min: 0,
