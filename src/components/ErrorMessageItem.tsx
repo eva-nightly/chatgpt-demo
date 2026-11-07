@@ -6,6 +6,7 @@ interface Props {
   onRetry?: () => void
 }
 
+// @uxid src/components/ErrorMessageItem::ErrorMessageItem
 export default ({ data, onRetry }: Props) => {
   return (
     <div class="my-4 px-4 py-3 border border-red/50 bg-red/10">

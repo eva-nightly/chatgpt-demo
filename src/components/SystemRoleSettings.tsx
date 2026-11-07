@@ -13,6 +13,7 @@ interface Props {
   temperatureSetting: (value: number) => void
 }
 
+// @uxid src/components/SystemRoleSettings::SystemRoleSettings
 export default (props: Props) => {
   let systemInputRef: HTMLTextAreaElement
   const [temperature, setTemperature] = createSignal(0.6)
