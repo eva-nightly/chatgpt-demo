@@ -1,0 +1,873 @@
+{
+  "schema": "evaluation-tool/trace-map@1",
+  "topology": {
+    "hasWebClient": false,
+    "hasNativeClient": false,
+    "hasServer": true,
+    "serverless": true,
+    "frameworks": [
+      "Next route handlers"
+    ]
+  },
+  "summary": {
+    "files": 19,
+    "components": 11,
+    "elements": 15,
+    "prompts": 0,
+    "aiCallSites": 1,
+    "aiCallSitesUnlinked": 1,
+    "filesNotAnalysedForAiCalls": 7,
+    "aiDependencies": 0,
+    "aiDependenciesUnexplained": 0,
+    "aiEvidenceProviders": 2,
+    "aiEvidenceUnexplained": 0,
+    "ownEndpointsCalled": 2,
+    "ownEndpointsUnanswered": 0,
+    "sharedCallSites": 0,
+    "promptsNotPrompts": 1,
+    "scanComplete": false
+  },
+  "units": [
+    {
+      "id": ".eslintrc.js",
+      "kind": "file",
+      "name": ".eslintrc.js",
+      "description": "Source module: 0 top-level artifacts.",
+      "file": ".eslintrc.js",
+      "startLine": 1,
+      "endLine": 32
+    },
+    {
+      "id": "envAdapter",
+      "kind": "function",
+      "name": "envAdapter",
+      "description": "Function 'envAdapter'.",
+      "file": "astro.config.mjs",
+      "startLine": 11,
+      "endLine": 17
+    },
+    {
+      "id": "astro.config.mjs",
+      "kind": "file",
+      "name": "astro.config.mjs",
+      "description": "Source module: 1 top-level artifact.",
+      "file": "astro.config.mjs",
+      "startLine": 1,
+      "endLine": 70
+    },
+    {
+      "id": "plugin",
+      "kind": "function",
+      "name": "plugin",
+      "description": "Exported Function 'plugin'.",
+      "file": "plugins/disableBlocks.ts",
+      "startLine": 1,
+      "endLine": 16,
+      "exported": true
+    },
+    {
+      "id": "plugins/disableBlocks.ts",
+      "kind": "file",
+      "name": "plugins/disableBlocks.ts",
+      "description": "Source module: 1 top-level artifact.",
+      "file": "plugins/disableBlocks.ts",
+      "startLine": 1,
+      "endLine": 17
+    },
+    {
+      "id": "ErrorMessageItem",
+      "kind": "component",
+      "name": "ErrorMessageItem",
+      "description": "Default-exported component. Props: data, onRetry. Renders: div, span, IconRefresh.",
+      "file": "src/components/ErrorMessageItem.tsx",
+      "startLine": 9,
+      "endLine": 24,
+      "childIds": [
+        "ErrorMessageItem.div"
+      ],
+      "props": [
+        "data",
+        "onRetry"
+      ]
+    },
+    {
+      "id": "ErrorMessageItem.div",
+      "kind": "element",
+      "name": "div",
+      "description": "<div> element. Handlers: onClick.",
+      "file": "src/components/ErrorMessageItem.tsx",
+      "startLine": 16,
+      "endLine": 19,
+      "selector": "[data-uxid=\"ErrorMessageItem.div\"]",
+      "parentId": "ErrorMessageItem",
+      "handlers": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "src/components/ErrorMessageItem.tsx",
+      "kind": "file",
+      "name": "src/components/ErrorMessageItem.tsx",
+      "description": "Source module: 1 top-level artifact.",
+      "file": "src/components/ErrorMessageItem.tsx",
+      "startLine": 1,
+      "endLine": 25
+    },
+    {
+      "id": "Generator",
+      "kind": "component",
+      "name": "Generator",
+      "description": "Default-exported component. Hooks: useThrottleFn. Renders: div, span, textarea, button, SystemRoleSettings, Index, MessageItem, ErrorMessageItem, +2 more.",
+      "file": "src/components/Generator.tsx",
+      "startLine": 10,
+      "endLine": 273,
+      "childIds": [
+        "Generator.messageitem",
+        "Generator.messageitem-2",
+        "Generator.errormessageitem",
+        "Generator.div",
+        "Generator.textarea",
+        "Generator.button",
+        "Generator.button-2",
+        "Generator.button-3"
+      ],
+      "hooks": [
+        "useThrottleFn"
+      ],
+      "visibleText": [
+        "Enter something...",
+        "Send",
+        "Clear",
+        "stick to bottom"
+      ],
+      "moments": [
+        {
+          "verb": "send",
+          "file": "src/components/Generator.tsx",
+          "line": 60,
+          "label": "Send",
+          "handler": "handleButtonClick"
+        }
+      ]
+    },
+    {
+      "id": "Generator.messageitem",
+      "kind": "element",
+      "name": "MessageItem",
+      "description": "<MessageItem> component. Handlers: onRetry.",
+      "file": "src/components/Generator.tsx",
+      "startLine": 217,
+      "endLine": 222,
+      "selector": "[data-uxid=\"Generator.messageitem\"]",
+      "parentId": "Generator",
+      "refId": "MessageItem",
+      "handlers": [
+        "onRetry"
+      ]
+    },
+    {
+      "id": "Generator.messageitem-2",
+      "kind": "element",
+      "name": "MessageItem",
+      "description": "<MessageItem> component.",
+      "file": "src/components/Generator.tsx",
+      "startLine": 226,
+      "endLine": 229,
+      "selector": "[data-uxid=\"Generator.messageitem-2\"]",
+      "parentId": "Generator",
+      "refId": "MessageItem"
+    },
+    {
+      "id": "Generator.errormessageitem",
+      "kind": "element",
+      "name": "ErrorMessageItem",
+      "description": "<ErrorMessageItem> component. Handlers: onRetry.",
+      "file": "src/components/Generator.tsx",
+      "startLine": 231,
+      "endLine": 231,
+      "selector": "[data-uxid=\"Generator.errormessageitem\"]",
+      "parentId": "Generator",
+      "refId": "ErrorMessageItem",
+      "handlers": [
+        "onRetry"
+      ]
+    },
+    {
+      "id": "Generator.div",
+      "kind": "element",
+      "name": "div",
+      "description": "<div> element. labelled \"Stop\". Handlers: onClick.",
+      "file": "src/components/Generator.tsx",
+      "startLine": 237,
+      "endLine": 237,
+      "selector": "[data-uxid=\"Generator.div\"]",
+      "parentId": "Generator",
+      "accessibleName": "Stop",
+      "handlers": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "Generator.textarea",
+      "kind": "element",
+      "name": "textarea",
+      "description": "Multi-line text field. placeholder \"Enter something...\", can be disabled. Handlers: onKeyDown, onInput.",
+      "file": "src/components/Generator.tsx",
+      "startLine": 242,
+      "endLine": 255,
+      "selector": "[data-uxid=\"Generator.textarea\"]",
+      "parentId": "Generator",
+      "accessibleName": "Enter something...",
+      "handlers": [
+        "onKeyDown",
+        "onInput"
+      ]
+    },
+    {
+      "id": "Generator.button",
+      "kind": "element",
+      "name": "button",
+      "description": "Button. can be disabled, labelled \"Send\". Handlers: onClick.",
+      "file": "src/components/Generator.tsx",
+      "startLine": 256,
+      "endLine": 258,
+      "selector": "[data-uxid=\"Generator.button\"]",
+      "parentId": "Generator",
+      "accessibleName": "Send",
+      "handlers": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "Generator.button-2",
+      "kind": "element",
+      "name": "button",
+      "description": "Button. can be disabled, labelled \"Clear\". Handlers: onClick.",
+      "file": "src/components/Generator.tsx",
+      "startLine": 259,
+      "endLine": 261,
+      "selector": "[data-uxid=\"Generator.button-2\"]",
+      "parentId": "Generator",
+      "accessibleName": "Clear",
+      "handlers": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "Generator.button-3",
+      "kind": "element",
+      "name": "button",
+      "description": "Button. type=button, labelled \"stick to bottom\". Handlers: onClick.",
+      "file": "src/components/Generator.tsx",
+      "startLine": 266,
+      "endLine": 268,
+      "selector": "[data-uxid=\"Generator.button-3\"]",
+      "parentId": "Generator",
+      "accessibleName": "stick to bottom",
+      "handlers": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "src/components/Generator.tsx",
+      "kind": "file",
+      "name": "src/components/Generator.tsx",
+      "description": "Source module: 1 top-level artifact.",
+      "file": "src/components/Generator.tsx",
+      "startLine": 1,
+      "endLine": 274
+    },
+    {
+      "id": "MessageItem",
+      "kind": "component",
+      "name": "MessageItem",
+      "description": "Default-exported component. Props: role, message, showRetry, onRetry. Hooks: useClipboard, useEventListener. Renders: div, span, IconRefresh.",
+      "file": "src/components/MessageItem.tsx",
+      "startLine": 17,
+      "endLine": 87,
+      "childIds": [
+        "MessageItem.div"
+      ],
+      "props": [
+        "role",
+        "message",
+        "showRetry",
+        "onRetry"
+      ],
+      "hooks": [
+        "useClipboard",
+        "useEventListener"
+      ]
+    },
+    {
+      "id": "MessageItem.div",
+      "kind": "element",
+      "name": "div",
+      "description": "<div> element. Handlers: onClick.",
+      "file": "src/components/MessageItem.tsx",
+      "startLine": 79,
+      "endLine": 82,
+      "selector": "[data-uxid=\"MessageItem.div\"]",
+      "parentId": "MessageItem",
+      "handlers": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "src/components/MessageItem.tsx",
+      "kind": "file",
+      "name": "src/components/MessageItem.tsx",
+      "description": "Source module: 1 top-level artifact.",
+      "file": "src/components/MessageItem.tsx",
+      "startLine": 1,
+      "endLine": 88
+    },
+    {
+      "id": "SettingsNotDefined",
+      "kind": "component",
+      "name": "SettingsNotDefined",
+      "description": "Arrow function component. Renders: div.",
+      "file": "src/components/SettingsSlider.tsx",
+      "startLine": 12,
+      "endLine": 16
+    },
+    {
+      "id": "SettingsSlider",
+      "kind": "component",
+      "name": "SettingsSlider",
+      "description": "Default-exported component. Props: settings, editing, value, setValue. Renders: div, Slider, SettingsNotDefined.",
+      "file": "src/components/SettingsSlider.tsx",
+      "startLine": 18,
+      "endLine": 41,
+      "props": [
+        "settings",
+        "editing",
+        "value",
+        "setValue"
+      ]
+    },
+    {
+      "id": "src/components/SettingsSlider.tsx",
+      "kind": "file",
+      "name": "src/components/SettingsSlider.tsx",
+      "description": "Source module: 2 top-level artifacts.",
+      "file": "src/components/SettingsSlider.tsx",
+      "startLine": 1,
+      "endLine": 42
+    },
+    {
+      "id": "Slider",
+      "kind": "component",
+      "name": "Slider",
+      "description": "Arrow function component. Props: props: Props. Hooks: useMachine. Renders: div, span, output, input.",
+      "file": "src/components/Slider.tsx",
+      "startLine": 16,
+      "endLine": 57,
+      "childIds": [
+        "Slider.input"
+      ],
+      "props": [
+        "props: Props"
+      ],
+      "hooks": [
+        "useMachine"
+      ]
+    },
+    {
+      "id": "Slider.input",
+      "kind": "element",
+      "name": "input",
+      "description": "Text input field.",
+      "file": "src/components/Slider.tsx",
+      "startLine": 52,
+      "endLine": 52,
+      "selector": "[data-uxid=\"Slider.input\"]",
+      "parentId": "Slider"
+    },
+    {
+      "id": "src/components/Slider.tsx",
+      "kind": "file",
+      "name": "src/components/Slider.tsx",
+      "description": "Source module: 1 top-level artifact.",
+      "file": "src/components/Slider.tsx",
+      "startLine": 1,
+      "endLine": 58
+    },
+    {
+      "id": "SystemRoleSettings",
+      "kind": "component",
+      "name": "SystemRoleSettings",
+      "description": "Default-exported component. Props: props: Props. Renders: div, span, p, textarea, button, Show, IconEnv, IconX, +1 more.",
+      "file": "src/components/SystemRoleSettings.tsx",
+      "startLine": 16,
+      "endLine": 92,
+      "childIds": [
+        "SystemRoleSettings.span",
+        "SystemRoleSettings.span-2",
+        "SystemRoleSettings.textarea",
+        "SystemRoleSettings.button"
+      ],
+      "props": [
+        "props: Props"
+      ],
+      "visibleText": [
+        "You are a helpful assistant, answer as concisely as possible....",
+        "Set"
+      ]
+    },
+    {
+      "id": "SystemRoleSettings.span",
+      "kind": "element",
+      "name": "span",
+      "description": "<span> element. Handlers: onClick.",
+      "file": "src/components/SystemRoleSettings.tsx",
+      "startLine": 36,
+      "endLine": 36,
+      "selector": "[data-uxid=\"SystemRoleSettings.span\"]",
+      "parentId": "SystemRoleSettings",
+      "handlers": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "SystemRoleSettings.span-2",
+      "kind": "element",
+      "name": "span",
+      "description": "<span> element. Handlers: onClick.",
+      "file": "src/components/SystemRoleSettings.tsx",
+      "startLine": 46,
+      "endLine": 49,
+      "selector": "[data-uxid=\"SystemRoleSettings.span-2\"]",
+      "parentId": "SystemRoleSettings",
+      "handlers": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "SystemRoleSettings.textarea",
+      "kind": "element",
+      "name": "textarea",
+      "description": "Multi-line text field. placeholder \"You are a helpful assistant, answer as concisely as possible....\".",
+      "file": "src/components/SystemRoleSettings.tsx",
+      "startLine": 60,
+      "endLine": 67,
+      "selector": "[data-uxid=\"SystemRoleSettings.textarea\"]",
+      "parentId": "SystemRoleSettings",
+      "accessibleName": "You are a helpful assistant, answer as concisely as possible...."
+    },
+    {
+      "id": "SystemRoleSettings.button",
+      "kind": "element",
+      "name": "button",
+      "description": "Button. labelled \"Set\". Handlers: onClick.",
+      "file": "src/components/SystemRoleSettings.tsx",
+      "startLine": 70,
+      "endLine": 72,
+      "selector": "[data-uxid=\"SystemRoleSettings.button\"]",
+      "parentId": "SystemRoleSettings",
+      "accessibleName": "Set",
+      "handlers": [
+        "onClick"
+      ]
+    },
+    {
+      "id": "src/components/SystemRoleSettings.tsx",
+      "kind": "file",
+      "name": "src/components/SystemRoleSettings.tsx",
+      "description": "Source module: 1 top-level artifact.",
+      "file": "src/components/SystemRoleSettings.tsx",
+      "startLine": 1,
+      "endLine": 93
+    },
+    {
+      "id": "Clear",
+      "kind": "component",
+      "name": "Clear",
+      "description": "Default-exported component. Renders: svg, path.",
+      "file": "src/components/icons/Clear.tsx",
+      "startLine": 1,
+      "endLine": 5
+    },
+    {
+      "id": "src/components/icons/Clear.tsx",
+      "kind": "file",
+      "name": "src/components/icons/Clear.tsx",
+      "description": "Source module: 1 top-level artifact.",
+      "file": "src/components/icons/Clear.tsx",
+      "startLine": 1,
+      "endLine": 6
+    },
+    {
+      "id": "Env",
+      "kind": "component",
+      "name": "Env",
+      "description": "Default-exported component. Renders: svg, path.",
+      "file": "src/components/icons/Env.tsx",
+      "startLine": 1,
+      "endLine": 5
+    },
+    {
+      "id": "src/components/icons/Env.tsx",
+      "kind": "file",
+      "name": "src/components/icons/Env.tsx",
+      "description": "Source module: 1 top-level artifact.",
+      "file": "src/components/icons/Env.tsx",
+      "startLine": 1,
+      "endLine": 6
+    },
+    {
+      "id": "Refresh",
+      "kind": "component",
+      "name": "Refresh",
+      "description": "Default-exported component. Renders: svg, path.",
+      "file": "src/components/icons/Refresh.tsx",
+      "startLine": 1,
+      "endLine": 5
+    },
+    {
+      "id": "src/components/icons/Refresh.tsx",
+      "kind": "file",
+      "name": "src/components/icons/Refresh.tsx",
+      "description": "Source module: 1 top-level artifact.",
+      "file": "src/components/icons/Refresh.tsx",
+      "startLine": 1,
+      "endLine": 6
+    },
+    {
+      "id": "X",
+      "kind": "component",
+      "name": "X",
+      "description": "Default-exported component. Renders: svg, path.",
+      "file": "src/components/icons/X.tsx",
+      "startLine": 1,
+      "endLine": 5
+    },
+    {
+      "id": "src/components/icons/X.tsx",
+      "kind": "file",
+      "name": "src/components/icons/X.tsx",
+      "description": "Source module: 1 top-level artifact.",
+      "file": "src/components/icons/X.tsx",
+      "startLine": 1,
+      "endLine": 6
+    },
+    {
+      "id": "post",
+      "kind": "function",
+      "name": "post",
+      "description": "Exported Function 'post'. Params: context.",
+      "file": "src/pages/api/auth.ts",
+      "startLine": 6,
+      "endLine": 13,
+      "props": [
+        "context"
+      ],
+      "routes": [
+        "/api/auth"
+      ],
+      "exported": true
+    },
+    {
+      "id": "src/pages/api/auth.ts",
+      "kind": "file",
+      "name": "src/pages/api/auth.ts",
+      "description": "Source module: 1 top-level artifact.",
+      "file": "src/pages/api/auth.ts",
+      "startLine": 1,
+      "endLine": 14,
+      "routes": [
+        "/api/auth"
+      ]
+    },
+    {
+      "id": "post-2",
+      "kind": "function",
+      "name": "post",
+      "description": "Exported Function 'post'. Params: context.",
+      "file": "src/pages/api/generate.ts",
+      "startLine": 14,
+      "endLine": 57,
+      "props": [
+        "context"
+      ],
+      "routes": [
+        "/api/generate"
+      ],
+      "exported": true
+    },
+    {
+      "id": "src/pages/api/generate.ts",
+      "kind": "file",
+      "name": "src/pages/api/generate.ts",
+      "description": "Source module: 1 top-level artifact.",
+      "file": "src/pages/api/generate.ts",
+      "startLine": 1,
+      "endLine": 58,
+      "routes": [
+        "/api/generate"
+      ]
+    },
+    {
+      "id": "src/types.ts",
+      "kind": "file",
+      "name": "src/types.ts",
+      "description": "Source module: 0 top-level artifacts.",
+      "file": "src/types.ts",
+      "startLine": 1,
+      "endLine": 10
+    },
+    {
+      "id": "digestMessage",
+      "kind": "function",
+      "name": "digestMessage",
+      "description": "Function 'digestMessage'. Params: message.",
+      "file": "src/utils/auth.ts",
+      "startLine": 7,
+      "endLine": 16,
+      "props": [
+        "message"
+      ]
+    },
+    {
+      "id": "generateSignature",
+      "kind": "function",
+      "name": "generateSignature",
+      "description": "Exported Function 'generateSignature'. Params: payload.",
+      "file": "src/utils/auth.ts",
+      "startLine": 18,
+      "endLine": 24,
+      "props": [
+        "payload"
+      ],
+      "exported": true
+    },
+    {
+      "id": "verifySignature",
+      "kind": "function",
+      "name": "verifySignature",
+      "description": "Exported Function 'verifySignature'. Params: payload, sign.",
+      "file": "src/utils/auth.ts",
+      "startLine": 26,
+      "endLine": 32,
+      "props": [
+        "payload",
+        "sign"
+      ],
+      "exported": true
+    },
+    {
+      "id": "src/utils/auth.ts",
+      "kind": "file",
+      "name": "src/utils/auth.ts",
+      "description": "Source module: 3 top-level artifacts.",
+      "file": "src/utils/auth.ts",
+      "startLine": 1,
+      "endLine": 33
+    },
+    {
+      "id": "generatePayload",
+      "kind": "function",
+      "name": "generatePayload",
+      "description": "Exported Function 'generatePayload'. Params: apiKey, messages, temperature.",
+      "file": "src/utils/openAI.ts",
+      "startLine": 7,
+      "endLine": 23,
+      "props": [
+        "apiKey",
+        "messages",
+        "temperature"
+      ],
+      "exported": true
+    },
+    {
+      "id": "parseOpenAIStream",
+      "kind": "function",
+      "name": "parseOpenAIStream",
+      "description": "Exported Function 'parseOpenAIStream'. Params: rawResponse.",
+      "file": "src/utils/openAI.ts",
+      "startLine": 25,
+      "endLine": 71,
+      "props": [
+        "rawResponse"
+      ],
+      "exported": true
+    },
+    {
+      "id": "src/utils/openAI.ts",
+      "kind": "file",
+      "name": "src/utils/openAI.ts",
+      "description": "Source module: 2 top-level artifacts.",
+      "file": "src/utils/openAI.ts",
+      "startLine": 1,
+      "endLine": 72
+    },
+    {
+      "id": "unocss.config.ts",
+      "kind": "file",
+      "name": "unocss.config.ts",
+      "description": "Source module: 0 top-level artifacts.",
+      "file": "unocss.config.ts",
+      "startLine": 1,
+      "endLine": 57
+    }
+  ],
+  "aiCalls": [
+    {
+      "file": "src/pages/api/generate.ts",
+      "line": 46,
+      "via": "HTTP post to /v1/chat/completions",
+      "promptIds": []
+    }
+  ],
+  "notAnalysed": [
+    {
+      "reason": "not read at all: this build has no adapter for Astro components, so any prompt or model call in these files is missing from this map",
+      "files": 7
+    }
+  ],
+  "aiEvidence": [
+    {
+      "provider": "an OpenAI-compatible endpoint",
+      "files": [
+        "src/pages/api/generate.ts"
+      ],
+      "kinds": [
+        "endpoint"
+      ],
+      "models": [],
+      "explainedBy": "call-site"
+    },
+    {
+      "provider": "OpenAI",
+      "files": [
+        "docker-compose.yml",
+        "src/pages/api/generate.ts"
+      ],
+      "kinds": [
+        "api-key-name",
+        "endpoint",
+        "model-id",
+        "model-setting"
+      ],
+      "models": [
+        "gpt-3.5-turbo",
+        "gpt-3.5-turbo-0301",
+        "gpt-back-bottom-btn",
+        "gpt-back-top-btn",
+        "gpt-copy-btn",
+        "gpt-copy-tips",
+        "gpt-password-input",
+        "gpt-password-submit",
+        "gpt-retry-btn",
+        "gpt-subtitle",
+        "gpt-title"
+      ],
+      "explainedBy": "call-site"
+    }
+  ],
+  "promptsRefused": [
+    {
+      "file": "src/components/MessageItem.tsx",
+      "name": "htmlString.prompt",
+      "line": 52,
+      "rule": "markup-document",
+      "reason": "tags carry it and nothing between them is a sentence: a markup or wire-format document, not an instruction"
+    }
+  ],
+  "endpoints": [
+    {
+      "endpoint": "route:/api/auth",
+      "calledFrom": [
+        {
+          "file": "src/pages/index.astro",
+          "line": 22
+        },
+        {
+          "file": "src/pages/password.astro",
+          "line": 30
+        }
+      ],
+      "handler": "src/pages/api/auth.ts",
+      "modelCallsInHandler": 0
+    },
+    {
+      "endpoint": "route:/api/generate",
+      "calledFrom": [
+        {
+          "file": "src/components/Generator.tsx",
+          "line": 101
+        }
+      ],
+      "handler": "src/pages/api/generate.ts",
+      "modelCallsInHandler": 1
+    }
+  ],
+  "incomplete": [
+    {
+      "code": "language-not-read",
+      "reason": "7 files are in a language this build cannot search for model calls: not read at all: this build has no adapter for Astro components, so any prompt or model call in these files is missing from this map"
+    }
+  ],
+  "stackProfile": {
+    "version": 1,
+    "roots": [
+      {
+        "root": "",
+        "frameworks": [
+          {
+            "id": "next-route-handlers",
+            "label": "Next route handlers",
+            "origin": "rule",
+            "evidence": [
+              {
+                "file": "src/pages/api/auth.ts",
+                "why": "marker file"
+              }
+            ]
+          }
+        ],
+        "hasWebClient": false,
+        "hasNativeClient": false,
+        "hasServer": true,
+        "serverless": true,
+        "runtime": "node",
+        "packageManager": "pnpm",
+        "serverCode": [
+          "src/pages/api/"
+        ],
+        "handlerStyles": [
+          {
+            "style": "a Next.js API route",
+            "where": "src/pages/api/",
+            "evidence": "src/pages/api/auth.ts"
+          }
+        ],
+        "aiPackages": [],
+        "unrecognisedAi": [],
+        "confidence": "high",
+        "unknowns": [],
+        "start": {
+          "script": "dev",
+          "port": 4321
+        }
+      }
+    ],
+    "unknowns": [],
+    "disagreements": [],
+    "tiers": [
+      "rule"
+    ]
+  },
+  "signIn": {
+    "reading": {
+      "kind": "none"
+    },
+    "protectedRoutes": null
+  },
+  "deploySigns": [
+    "Dockerfile",
+    "docker-compose.yml",
+    "netlify.toml",
+    "vercel.json"
+  ]
+}
