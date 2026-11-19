@@ -1,0 +1,170 @@
+{
+  "sections": [],
+  "sectionsFrom": "none",
+  "navigation": null,
+  "pages": [],
+  "actions": [
+    {
+      "id": "ANY /api/auth",
+      "method": "ANY",
+      "path": "/api/auth",
+      "file": "src/pages/api/auth.ts",
+      "doc": [],
+      "tables": {},
+      "pages": [],
+      "group": "src/pages/api",
+      "section": null
+    },
+    {
+      "id": "ANY /api/generate",
+      "method": "ANY",
+      "path": "/api/generate",
+      "file": "src/pages/api/generate.ts",
+      "doc": [],
+      "tables": {},
+      "pages": [],
+      "group": "src/pages/api",
+      "section": null
+    }
+  ],
+  "groups": [
+    {
+      "id": "src/components/Generator",
+      "label": "Generator",
+      "section": null,
+      "files": 1,
+      "tables": {},
+      "pages": [],
+      "calls": [
+        "src/pages/api"
+      ],
+      "components": [
+        "src/components/Generator::Generator"
+      ]
+    },
+    {
+      "id": "src/pages/api",
+      "label": "api",
+      "section": null,
+      "files": 2,
+      "tables": {},
+      "pages": [],
+      "calls": [],
+      "components": []
+    }
+  ],
+  "quiet": [],
+  "offMap": [
+    {
+      "id": "src/components/ErrorMessageItem",
+      "label": "ErrorMessageItem",
+      "section": null,
+      "files": 1,
+      "tables": {},
+      "pages": [],
+      "calls": [],
+      "components": [
+        "src/components/ErrorMessageItem::ErrorMessageItem"
+      ]
+    },
+    {
+      "id": "src/components/MessageItem",
+      "label": "MessageItem",
+      "section": null,
+      "files": 1,
+      "tables": {},
+      "pages": [],
+      "calls": [],
+      "components": [
+        "src/components/MessageItem::MessageItem"
+      ]
+    },
+    {
+      "id": "src/components/SettingsSlider",
+      "label": "SettingsSlider",
+      "section": null,
+      "files": 1,
+      "tables": {},
+      "pages": [],
+      "calls": [],
+      "components": [
+        "src/components/SettingsSlider::SettingsNotDefined",
+        "src/components/SettingsSlider::SettingsSlider"
+      ]
+    },
+    {
+      "id": "src/components/Slider",
+      "label": "Slider",
+      "section": null,
+      "files": 1,
+      "tables": {},
+      "pages": [],
+      "calls": [],
+      "components": [
+        "src/components/Slider::Slider"
+      ]
+    },
+    {
+      "id": "src/components/SystemRoleSettings",
+      "label": "SystemRoleSettings",
+      "section": null,
+      "files": 1,
+      "tables": {},
+      "pages": [],
+      "calls": [],
+      "components": [
+        "src/components/SystemRoleSettings::SystemRoleSettings"
+      ]
+    },
+    {
+      "id": "src/components/icons",
+      "label": "icons",
+      "section": null,
+      "files": 4,
+      "tables": {},
+      "pages": [],
+      "calls": [],
+      "components": [
+        "src/components/icons/Clear::Clear",
+        "src/components/icons/Env::Env",
+        "src/components/icons/Refresh::Refresh",
+        "src/components/icons/X::X"
+      ]
+    }
+  ],
+  "tables": [],
+  "ai": [
+    {
+      "id": "src/pages/api",
+      "label": "API",
+      "file": "src/pages/api/generate.ts",
+      "section": null,
+      "reads": [],
+      "calledFrom": [
+        "src/components/Generator"
+      ]
+    }
+  ],
+  "services": [],
+  "shared": [],
+  "gaps": [
+    {
+      "kind": "good-to-know",
+      "text": "No screens were found: no Next.js app/ or pages/ folder, and no routes declared in code (GoRouter, MaterialApp routes, React Router) that name a screen this scan found. The Product floor is empty and every section comes from the code alone."
+    },
+    {
+      "kind": "good-to-know",
+      "text": "All of the code groups and API actions are used by no page this map can follow (background jobs, webhooks, other apps, or calls built at runtime), so they belong to no section.",
+      "detail": "2 of 2 groups · 2 of 2 actions"
+    },
+    {
+      "kind": "good-to-know",
+      "text": "No data access was found (this reads Supabase, Prisma, Firestore, Firebase admin, Drizzle, Mongoose, Knex, SQL), so the Data floor is empty."
+    },
+    {
+      "kind": "good-to-know",
+      "text": "Some links in the code are missing: imports of the product's own code that resolve to no file.",
+      "detail": "1 import"
+    }
+  ]
+}

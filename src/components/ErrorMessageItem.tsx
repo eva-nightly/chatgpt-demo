@@ -6,6 +6,7 @@ interface Props {
   onRetry?: () => void
 }
 
+// @uxid src/components/ErrorMessageItem::ErrorMessageItem
 export default ({ data, onRetry }: Props) => {
   return (
     <div class="my-4 px-4 py-3 border border-red/50 bg-red/10">
@@ -13,7 +14,7 @@ export default ({ data, onRetry }: Props) => {
       <div class="text-red op-70 text-sm">{data.message}</div>
       {onRetry && (
         <div class="fie px-3 mb-2">
-          <div onClick={onRetry} class="gpt-retry-btn border-red/50 text-red">
+          <div /* @uxid src/components/ErrorMessageItem::ErrorMessageItem.div */ onClick={onRetry} class="gpt-retry-btn border-red/50 text-red">
             <IconRefresh />
             <span>Regenerate</span>
           </div>

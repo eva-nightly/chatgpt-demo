@@ -1,0 +1,512 @@
+{
+  "framework": "css-variables",
+  "sources": [
+    {
+      "kind": "css-variables",
+      "path": "src/slider.css",
+      "line": 12,
+      "excerpt": "[data-scope='slider'][data-part='control'] {",
+      "detail": "2 custom properties declared under `[data-scope='slider'][data-part='control']`."
+    }
+  ],
+  "shadcn": null,
+  "darkVariant": null,
+  "palette": {
+    "spaces": [],
+    "achromatic": [],
+    "chromatic": []
+  },
+  "groups": [
+    {
+      "role": "spacing",
+      "label": "Spacing",
+      "families": [
+        {
+          "family": "slider-thumb-size",
+          "tokens": [
+            {
+              "name": "--slider-thumb-size",
+              "value": "14px",
+              "kind": "spacing",
+              "source": "src/slider.css",
+              "line": 13,
+              "exposedAs": null,
+              "role": "spacing",
+              "family": "slider-thumb-size",
+              "light": {
+                "raw": "14px",
+                "resolved": "14px",
+                "px": 14,
+                "external": false,
+                "source": "src/slider.css",
+                "line": 13,
+                "selector": "[data-scope='slider'][data-part='control']"
+              },
+              "dark": {
+                "raw": "14px",
+                "resolved": "14px",
+                "px": 14,
+                "external": false,
+                "source": "src/slider.css",
+                "line": 13,
+                "selector": "[data-scope='slider'][data-part='control']"
+              },
+              "hasDarkOverride": false,
+              "aliasOf": null,
+              "layers": [
+                {
+                  "selector": "[data-scope='slider'][data-part='control']",
+                  "mode": null,
+                  "declaredAs": "--slider-thumb-size",
+                  "raw": "14px",
+                  "source": "src/slider.css",
+                  "line": 13
+                }
+              ],
+              "usage": {
+                "utilityUses": 0,
+                "varRefs": 4,
+                "utilities": [],
+                "examples": [
+                  {
+                    "path": "src/slider.css",
+                    "line": 18
+                  },
+                  {
+                    "path": "src/slider.css",
+                    "line": 21
+                  },
+                  {
+                    "path": "src/slider.css",
+                    "line": 33
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "family": "slider-track-height",
+          "tokens": [
+            {
+              "name": "--slider-track-height",
+              "value": "4px",
+              "kind": "spacing",
+              "source": "src/slider.css",
+              "line": 14,
+              "exposedAs": null,
+              "role": "spacing",
+              "family": "slider-track-height",
+              "light": {
+                "raw": "4px",
+                "resolved": "4px",
+                "px": 4,
+                "external": false,
+                "source": "src/slider.css",
+                "line": 14,
+                "selector": "[data-scope='slider'][data-part='control']"
+              },
+              "dark": {
+                "raw": "4px",
+                "resolved": "4px",
+                "px": 4,
+                "external": false,
+                "source": "src/slider.css",
+                "line": 14,
+                "selector": "[data-scope='slider'][data-part='control']"
+              },
+              "hasDarkOverride": false,
+              "aliasOf": null,
+              "layers": [
+                {
+                  "selector": "[data-scope='slider'][data-part='control']",
+                  "mode": null,
+                  "declaredAs": "--slider-track-height",
+                  "raw": "4px",
+                  "source": "src/slider.css",
+                  "line": 14
+                }
+              ],
+              "usage": {
+                "utilityUses": 0,
+                "varRefs": 2,
+                "utilities": [],
+                "examples": [
+                  {
+                    "path": "src/slider.css",
+                    "line": 57
+                  },
+                  {
+                    "path": "src/slider.css",
+                    "line": 60
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "tokenCount": 2,
+      "totalUses": 6
+    }
+  ],
+  "tokens": [
+    {
+      "name": "--slider-thumb-size",
+      "value": "14px",
+      "kind": "spacing",
+      "source": "src/slider.css",
+      "line": 13,
+      "exposedAs": null,
+      "role": "spacing",
+      "family": "slider-thumb-size",
+      "light": {
+        "raw": "14px",
+        "resolved": "14px",
+        "px": 14,
+        "external": false,
+        "source": "src/slider.css",
+        "line": 13,
+        "selector": "[data-scope='slider'][data-part='control']"
+      },
+      "dark": {
+        "raw": "14px",
+        "resolved": "14px",
+        "px": 14,
+        "external": false,
+        "source": "src/slider.css",
+        "line": 13,
+        "selector": "[data-scope='slider'][data-part='control']"
+      },
+      "hasDarkOverride": false,
+      "aliasOf": null,
+      "layers": [
+        {
+          "selector": "[data-scope='slider'][data-part='control']",
+          "mode": null,
+          "declaredAs": "--slider-thumb-size",
+          "raw": "14px",
+          "source": "src/slider.css",
+          "line": 13
+        }
+      ],
+      "usage": {
+        "utilityUses": 0,
+        "varRefs": 4,
+        "utilities": [],
+        "examples": [
+          {
+            "path": "src/slider.css",
+            "line": 18
+          },
+          {
+            "path": "src/slider.css",
+            "line": 21
+          },
+          {
+            "path": "src/slider.css",
+            "line": 33
+          }
+        ]
+      }
+    },
+    {
+      "name": "--slider-track-height",
+      "value": "4px",
+      "kind": "spacing",
+      "source": "src/slider.css",
+      "line": 14,
+      "exposedAs": null,
+      "role": "spacing",
+      "family": "slider-track-height",
+      "light": {
+        "raw": "4px",
+        "resolved": "4px",
+        "px": 4,
+        "external": false,
+        "source": "src/slider.css",
+        "line": 14,
+        "selector": "[data-scope='slider'][data-part='control']"
+      },
+      "dark": {
+        "raw": "4px",
+        "resolved": "4px",
+        "px": 4,
+        "external": false,
+        "source": "src/slider.css",
+        "line": 14,
+        "selector": "[data-scope='slider'][data-part='control']"
+      },
+      "hasDarkOverride": false,
+      "aliasOf": null,
+      "layers": [
+        {
+          "selector": "[data-scope='slider'][data-part='control']",
+          "mode": null,
+          "declaredAs": "--slider-track-height",
+          "raw": "4px",
+          "source": "src/slider.css",
+          "line": 14
+        }
+      ],
+      "usage": {
+        "utilityUses": 0,
+        "varRefs": 2,
+        "utilities": [],
+        "examples": [
+          {
+            "path": "src/slider.css",
+            "line": 57
+          },
+          {
+            "path": "src/slider.css",
+            "line": 60
+          }
+        ]
+      }
+    }
+  ],
+  "scales": {
+    "radius": [],
+    "spacing": [
+      {
+        "name": "--slider-track-height",
+        "expression": "4px",
+        "computedPx": 4,
+        "uses": 2,
+        "source": "src/slider.css",
+        "line": 14
+      },
+      {
+        "name": "--slider-thumb-size",
+        "expression": "14px",
+        "computedPx": 14,
+        "uses": 4,
+        "source": "src/slider.css",
+        "line": 13
+      }
+    ],
+    "breakpoints": []
+  },
+  "typography": {
+    "fontFaces": [],
+    "families": [],
+    "scale": []
+  },
+  "states": [
+    {
+      "variant": "dark",
+      "count": 10
+    },
+    {
+      "variant": "hover",
+      "count": 10
+    },
+    {
+      "variant": "placeholder",
+      "count": 2
+    },
+    {
+      "variant": "active",
+      "count": 1
+    },
+    {
+      "variant": "group-hover",
+      "count": 1
+    }
+  ],
+  "breakpointUse": [
+    {
+      "variant": "md",
+      "count": 1
+    }
+  ],
+  "components": [
+    {
+      "name": "Slider",
+      "file": "src/components/Slider.tsx",
+      "line": 17,
+      "base": null,
+      "axes": [],
+      "states": [
+        "disabled"
+      ],
+      "conditionalBranches": 0,
+      "uses": 1,
+      "usedInFiles": 1
+    },
+    {
+      "name": "SettingsNotDefined",
+      "file": "src/components/SettingsSlider.tsx",
+      "line": 13,
+      "base": null,
+      "axes": [],
+      "states": [],
+      "conditionalBranches": 0,
+      "uses": 0,
+      "usedInFiles": 0
+    }
+  ],
+  "composition": {
+    "primitiveDir": null,
+    "primitiveDirEvidence": null,
+    "primitives": [],
+    "unusedPrimitives": [],
+    "oneOffs": [
+      {
+        "name": "Slider",
+        "file": "src/components/Slider.tsx"
+      }
+    ],
+    "unreferenced": 1,
+    "screenCount": 0,
+    "applicationCount": 2,
+    "primitiveCount": 0,
+    "primitiveFileCount": 0
+  },
+  "disagreements": [
+    {
+      "kind": "raw-palette",
+      "title": "22 class(es) paint with Tailwind's stock palette instead of the token palette",
+      "detail": "18 distinct utilities, most used: bg-gray-200 (2), bg-gray-400 (2), bg-gray-600 (2), bg-neutral-300 (2), bg-gray-300 (1), bg-gray-500 (1), bg-gray-700 (1), bg-neutral-700 (1).",
+      "count": 22,
+      "examples": [
+        {
+          "path": "src/slider.css",
+          "line": 33,
+          "excerpt": "bg-gray-200"
+        },
+        {
+          "path": "src/slider.css",
+          "line": 54,
+          "excerpt": "bg-gray-200"
+        },
+        {
+          "path": "src/slider.css",
+          "line": 24,
+          "excerpt": "bg-gray-400"
+        },
+        {
+          "path": "src/slider.css",
+          "line": 27,
+          "excerpt": "bg-gray-400"
+        },
+        {
+          "path": "src/slider.css",
+          "line": 24,
+          "excerpt": "bg-gray-600"
+        },
+        {
+          "path": "src/slider.css",
+          "line": 67,
+          "excerpt": "bg-gray-600"
+        },
+        {
+          "path": "src/slider.css",
+          "line": 64,
+          "excerpt": "bg-neutral-300"
+        },
+        {
+          "path": "src/slider.css",
+          "line": 67,
+          "excerpt": "bg-neutral-300"
+        }
+      ]
+    },
+    {
+      "kind": "hardcoded-color",
+      "title": "5 hardcoded colour literal(s) bypass the tokens",
+      "detail": "Written into a colour property or an arbitrary class value.",
+      "count": 5,
+      "examples": [
+        {
+          "path": "src/message.css",
+          "line": 2,
+          "excerpt": "background-color: #64748b10;"
+        },
+        {
+          "path": "src/message.css",
+          "line": 16,
+          "excerpt": "background-color: #64748b40;"
+        },
+        {
+          "path": "src/message.css",
+          "line": 25,
+          "excerpt": "border-bottom: 2px solid #64748b40;"
+        },
+        {
+          "path": "astro.config.mjs",
+          "line": 31,
+          "excerpt": "theme_color: '#212129',"
+        },
+        {
+          "path": "astro.config.mjs",
+          "line": 32,
+          "excerpt": "background_color: '#ffffff',"
+        }
+      ]
+    }
+  ],
+  "literals": [
+    {
+      "path": "src/message.css",
+      "line": 2,
+      "excerpt": "background-color: #64748b10;",
+      "literal": "#64748b10",
+      "duplicatesToken": null,
+      "context": "colour property"
+    },
+    {
+      "path": "src/message.css",
+      "line": 16,
+      "excerpt": "background-color: #64748b40;",
+      "literal": "#64748b40",
+      "duplicatesToken": null,
+      "context": "colour property"
+    },
+    {
+      "path": "src/message.css",
+      "line": 25,
+      "excerpt": "border-bottom: 2px solid #64748b40;",
+      "literal": "#64748b40",
+      "duplicatesToken": null,
+      "context": "colour property"
+    },
+    {
+      "path": "astro.config.mjs",
+      "line": 31,
+      "excerpt": "theme_color: '#212129',",
+      "literal": "#212129",
+      "duplicatesToken": null,
+      "context": "colour-valued string"
+    },
+    {
+      "path": "astro.config.mjs",
+      "line": 32,
+      "excerpt": "background_color: '#ffffff',",
+      "literal": "#ffffff",
+      "duplicatesToken": null,
+      "context": "colour-valued string"
+    }
+  ],
+  "summary": {
+    "tokenCount": 2,
+    "declarationCount": 2,
+    "groupCount": 1,
+    "tokensWithDark": 0,
+    "tokensWithoutDark": 0,
+    "usedTokens": 2,
+    "deadTokens": 0,
+    "componentCount": 2,
+    "componentsWithVariants": 0,
+    "variantAxisCount": 0,
+    "variantValueCount": 0,
+    "primitiveCount": 0,
+    "disagreementKinds": 2,
+    "disagreementInstances": 27
+  },
+  "filesScanned": {
+    "style": 2,
+    "source": 21
+  }
+}

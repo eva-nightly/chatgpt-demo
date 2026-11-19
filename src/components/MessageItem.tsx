@@ -14,6 +14,7 @@ interface Props {
   onRetry?: () => void
 }
 
+// @uxid src/components/MessageItem::MessageItem
 export default ({ role, message, showRetry, onRetry }: Props) => {
   const roleClass = {
     system: 'bg-gradient-to-r from-gray-300 via-gray-200 to-gray-300',
@@ -76,7 +77,7 @@ export default ({ role, message, showRetry, onRetry }: Props) => {
       </div>
       {showRetry?.() && onRetry && (
         <div class="fie px-3 mb-2">
-          <div onClick={onRetry} class="gpt-retry-btn">
+          <div /* @uxid src/components/MessageItem::MessageItem.div */ onClick={onRetry} class="gpt-retry-btn">
             <IconRefresh />
             <span>Regenerate</span>
           </div>
