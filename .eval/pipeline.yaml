@@ -1,0 +1,14 @@
+stack: node-typescript
+packageManager: pnpm
+commit: 10c2ed72b24663ce43ba0fd97c2bb80eec5db6bb
+verifiedAt: 2026-11-25T14:19:05.818Z
+commands:
+  install: pnpm install --frozen-lockfile
+  build: pnpm run build
+  analyze: pnpm run lint
+  test: null
+status:
+  install: none
+  build: none
+  analyze: none
+  test: none
