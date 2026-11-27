@@ -13,6 +13,7 @@ interface Props {
   temperatureSetting: (value: number) => void
 }
 
+// @uxid src/components/SystemRoleSettings::SystemRoleSettings
 export default (props: Props) => {
   let systemInputRef: HTMLTextAreaElement
   const [temperature, setTemperature] = createSignal(0.6)
@@ -33,7 +34,7 @@ export default (props: Props) => {
           <div>
             <div class="fi gap-1 op-50 dark:op-60">
               <Show when={props.canEdit()} fallback={<IconEnv />}>
-                <span onClick={() => props.setCurrentSystemRoleSettings('')} class="sys-edit-btn p-1 rd-50%" > <IconX /> </span>
+                <span /* @uxid src/components/SystemRoleSettings::SystemRoleSettings.span */ onClick={() => props.setCurrentSystemRoleSettings('')} class="sys-edit-btn p-1 rd-50%" > <IconX /> </span>
               </Show>
               <span>System Role ( Temp = {temperature()} ) : </span>
             </div>
@@ -43,7 +44,7 @@ export default (props: Props) => {
           </div>
         </Show>
         <Show when={!props.currentSystemRoleSettings() && props.canEdit()}>
-          <span onClick={() => props.setSystemRoleEditing(!props.systemRoleEditing())} class="sys-edit-btn">
+          <span /* @uxid src/components/SystemRoleSettings::SystemRoleSettings.span-2 */ onClick={() => props.setSystemRoleEditing(!props.systemRoleEditing())} class="sys-edit-btn">
             <IconEnv />
             <span>Add System Role</span>
           </span>
@@ -57,7 +58,7 @@ export default (props: Props) => {
           </div>
           <p class="my-2 leading-normal text-sm op-50 dark:op-60">Gently instruct the assistant and set the behavior of the assistant.</p>
           <div>
-            <textarea
+            <textarea /* @uxid src/components/SystemRoleSettings::SystemRoleSettings.textarea */
               ref={systemInputRef!}
               placeholder="You are a helpful assistant, answer as concisely as possible...."
               autocomplete="off"
@@ -67,7 +68,7 @@ export default (props: Props) => {
             />
           </div>
           <div class="w-full fi fb">
-            <button onClick={handleButtonClick} gen-slate-btn>
+            <button /* @uxid src/components/SystemRoleSettings::SystemRoleSettings.button */ onClick={handleButtonClick} gen-slate-btn>
               Set
             </button>
             <div class="w-full ml-2">

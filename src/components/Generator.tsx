@@ -7,6 +7,7 @@ import SystemRoleSettings from './SystemRoleSettings'
 import ErrorMessageItem from './ErrorMessageItem'
 import type { ChatMessage, ErrorMessage } from '@/types'
 
+// @uxid src/components/Generator::Generator
 export default () => {
   let inputRef: HTMLTextAreaElement
   const [currentSystemRoleSettings, setCurrentSystemRoleSettings] = createSignal('')
@@ -216,7 +217,7 @@ export default () => {
       />
       <Index each={messageList()}>
         {(message, index) => (
-          <MessageItem
+          <MessageItem /* @uxid src/components/Generator::Generator.messageitem */
             role={message().role}
             message={message().content}
             showRetry={() => (message().role === 'assistant' && index === messageList().length - 1)}
@@ -225,23 +226,23 @@ export default () => {
         )}
       </Index>
       {currentAssistantMessage() && (
-        <MessageItem
+        <MessageItem /* @uxid src/components/Generator::Generator.messageitem-2 */
           role="assistant"
           message={currentAssistantMessage}
         />
       )}
-      { currentError() && <ErrorMessageItem data={currentError()} onRetry={retryLastFetch} /> }
+      { currentError() && <ErrorMessageItem /* @uxid src/components/Generator::Generator.errormessageitem */ data={currentError()} onRetry={retryLastFetch} /> }
       <Show
         when={!loading()}
         fallback={() => (
           <div class="gen-cb-wrapper">
             <span>AI is thinking...</span>
-            <div class="gen-cb-stop" onClick={stopStreamFetch}>Stop</div>
+            <div /* @uxid src/components/Generator::Generator.div */ class="gen-cb-stop" onClick={stopStreamFetch}>Stop</div>
           </div>
         )}
       >
         <div class="gen-text-wrapper" class:op-50={systemRoleEditing()}>
-          <textarea
+          <textarea /* @uxid src/components/Generator::Generator.textarea */
             ref={inputRef!}
             disabled={systemRoleEditing()}
             onKeyDown={handleKeydown}
@@ -255,17 +256,17 @@ export default () => {
             rows="1"
             class="gen-textarea"
           />
-          <button onClick={handleButtonClick} disabled={systemRoleEditing()} gen-slate-btn>
+          <button /* @uxid src/components/Generator::Generator.button */ onClick={handleButtonClick} disabled={systemRoleEditing()} gen-slate-btn>
             Send
           </button>
-          <button title="Clear" onClick={clear} disabled={systemRoleEditing()} gen-slate-btn>
+          <button /* @uxid src/components/Generator::Generator.button-2 */ title="Clear" onClick={clear} disabled={systemRoleEditing()} gen-slate-btn>
             <IconClear />
           </button>
         </div>
       </Show>
       <div class="fixed bottom-5 left-5 rounded-md hover:bg-slate/10 w-fit h-fit transition-colors active:scale-90" class:stick-btn-on={isStick()}>
         <div>
-          <button class="p-2.5 text-base" title="stick to bottom" type="button" onClick={() => setStick(!isStick())}>
+          <button /* @uxid src/components/Generator::Generator.button-3 */ class="p-2.5 text-base" title="stick to bottom" type="button" onClick={() => setStick(!isStick())}>
             <div i-ph-arrow-line-down-bold />
           </button>
         </div>
