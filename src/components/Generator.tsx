@@ -146,8 +146,6 @@ export default () => {
       setController(null)
       return
     }
-    // Done streaming: reset the live bubble before it is archived.
-    setCurrentAssistantMessage('')
     archiveCurrentMessage()
     isStick() && instantToBottom()
   }
