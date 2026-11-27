@@ -1,0 +1,14 @@
+stack: node-typescript
+packageManager: pnpm
+commit: fa4ef3f40c15d076ef804715366e48c7aaa3dfcb
+verifiedAt: 2026-11-27T13:55:07.832Z
+commands:
+  install: corepack pnpm@8.15.9 install --frozen-lockfile
+  build: corepack pnpm@8.15.9 run build
+  analyze: corepack pnpm@8.15.9 run lint
+  test: null
+status:
+  install: none
+  build: none
+  analyze: none
+  test: none
