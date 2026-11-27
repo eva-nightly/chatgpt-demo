@@ -13,6 +13,7 @@ interface Props {
   setValue: (v: number) => void
 }
 
+// @uxid src/components/Slider::Slider
 export const Slider = (selectProps: Props) => {
   const props = mergeProps({
     min: 0,
@@ -49,7 +50,7 @@ export const Slider = (selectProps: Props) => {
           <div {...api().rangeProps} />
         </div>
         <div {...api().thumbProps}>
-          <input {...api().hiddenInputProps} />
+          <input /* @uxid src/components/Slider::Slider.input */ {...api().hiddenInputProps} />
         </div>
       </div>
     </div>

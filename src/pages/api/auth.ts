@@ -3,6 +3,7 @@ import type { APIRoute } from 'astro'
 const realPassword = import.meta.env.SITE_PASSWORD || ''
 const passList = realPassword.split(',') || []
 
+// @uxid src/pages/api/auth::post
 export const post: APIRoute = async(context) => {
   const body = await context.request.json()
 

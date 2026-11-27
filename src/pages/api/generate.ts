@@ -11,6 +11,7 @@ const baseUrl = ((import.meta.env.OPENAI_API_BASE_URL) || 'https://api.openai.co
 const sitePassword = import.meta.env.SITE_PASSWORD || ''
 const passList = sitePassword.split(',') || []
 
+// @uxid src/pages/api/generate::post
 export const post: APIRoute = async(context) => {
   const body = await context.request.json()
   const { sign, time, messages, pass, temperature } = body

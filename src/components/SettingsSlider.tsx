@@ -9,12 +9,14 @@ interface Props {
   setValue: (v: number) => void
 }
 
+// @uxid src/components/SettingsSlider::SettingsNotDefined
 const SettingsNotDefined = () => {
   return (
     <div class="op-25">Not Defined</div>
   )
 }
 
+// @uxid src/components/SettingsSlider::SettingsSlider
 export default ({ settings, editing, value, setValue }: Props) => {
   if (!settings.name || !settings.type) return null
   const sliderSettings = settings as SettingsUISlider
